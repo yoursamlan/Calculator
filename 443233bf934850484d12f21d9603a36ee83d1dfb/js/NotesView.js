@@ -20,16 +20,20 @@ export default class NotesView {
 		this.onNoteEdit = onNoteEdit;
 		this.onNoteDelete = onNoteDelete;
 		this.root.innerHTML = `
-            <div class="notes__sidebar">
-								<a href="./../index.html" class="notes__hide">Hide Notes</a>
-								<!--button class="notes__hide" type="button"> Hide Note</button-->
+
+            <div id="mySidebar" class="sidebar">
+  							<a href="javascript:void(0)" class="closebtn" id="cb" onclick = "closeNav()">×</a>
+								<a href="./../index.html" class="notes__hide">Hide</a>
                 <button class="notes__add" type="button"> Add Note</button>
                 <div class="notes__list"></div>
             </div>
-            <div class="notes__preview">
-                <input class="notes__title" type="text" placeholder = "Heading...">
-                <textarea class="notes__body" placeholder="Type something..."></textarea>
-            </div>
+						<div id="main">
+						<button class="openbtn" id="ob" onclick="openNav()">☰</button> 
+							<div class="notes__preview">
+									<input class="notes__title" type="text" placeholder = "Heading...">
+									<textarea class="notes__body" placeholder="Type something..."></textarea>
+							</div>
+						</div>
         `;
 
 		const btnAddNote = this.root.querySelector(".notes__add");

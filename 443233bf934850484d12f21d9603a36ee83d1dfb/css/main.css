@@ -4,7 +4,11 @@ body {
 	margin: 0;
 }
 
-::-webkit-scrollbar {
+*/ {
+	border: 1px solid red;
+}
+
+*/::-webkit-scrollbar {
 	width: 5px;
 }
 
@@ -17,6 +21,7 @@ body {
 	font-family: "Montserrat", "Quicksand", sans-serif;
 }
 
+/*
 .notes__sidebar {
 	border-right: 2px solid #dddddd;
 	flex-shrink: 0;
@@ -24,7 +29,7 @@ body {
 	padding: 1em;
 	width: 350px;
 }
-
+*/
 .notes__add,
 .notes__hide {
 	background: #4d90fe;
@@ -32,11 +37,12 @@ body {
 	border-radius: 7px;
 	color: #ffffff;
 	cursor: pointer;
-	font-size: 1.25em;
+	font-size: 1.2em;
 	/*font-weight: bold;*/
+	margin: 10px 0 0px 12px;
 	margin-bottom: 1em;
-	padding: 0.75em 0;
-	width: 49%;
+	padding: 0.5em 0;
+	width: 44%;
 	display: inline-grid;
 	text-align: center;
 	text-decoration: none;
@@ -52,11 +58,13 @@ body {
 
 .notes__list-item {
 	cursor: pointer;
+	margin: 10px;
 }
 
 .notes__list-item--selected {
-	background: #eeeeee;
+	background: #eee;
 	border-radius: 7px;
+	padding: 10px;
 	font-weight: normal;
 }
 
@@ -75,7 +83,8 @@ body {
 
 .notes__small-updated {
 	color: #aaaaaa;
-	font-style: italic;
+	font-size: 0.75em;
+	font-style: normal;
 	text-align: right;
 }
 
@@ -114,4 +123,72 @@ a.notes__hide {
 
 	text-decoration: none;
 	color: #fff;
+}
+
+
+/*=================================================*/
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.closebtn {
+	padding: 8px;
+	margin-right: -20px;
+	text-decoration: none;
+	font-size: 50px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.closebtn:hover {
+	color: #f00;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 50px;
+	margin-left: 50px;
+}
+
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	color: #111;
+	padding: 10px 15px;
+	border: none;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.openbtn:hover {
+	color: #009500;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidebar {
+		padding-top: 15px;
+	}
+
+	.sidebar a {
+		font-size: 18px;
+	}
 }
