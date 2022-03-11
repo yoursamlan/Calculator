@@ -4,6 +4,7 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 5px;
 	font-size: 1.8rem;
+	overflow: hidden;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
@@ -115,4 +116,21 @@ div.equal:hover {
 
 div.equal:active {
 	font-weight: bold;
+}
+
+#credit {
+	color: #b6bbff;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Montserrat Light", "Montserrat", sans-serif;
+	font-weight: 100;
+	font-size: 15px;
+	padding: 20px;
+	letter-spacing: 7px;
+}
+
+#credit a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #41afff
 }
