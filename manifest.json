@@ -2,7 +2,7 @@
 	"background_color": "#ffffff",
 	"dir": "ltr",
 	"display": "fullscreen",
-	"name": "Calculator : A Calculator with a Twist",
+	"name": "Calculator",
 	/*"orientation": "portrait-primary",*/
 	"scope": "/",
 	"short_name": "Calculator",
