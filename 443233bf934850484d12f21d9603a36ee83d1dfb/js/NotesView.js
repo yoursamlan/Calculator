@@ -24,7 +24,8 @@ export default class NotesView {
             <div id="mySidebar" class="sidebar">
   							<a href="javascript:void(0)" class="closebtn" id="cb" onclick = "closeNav()">×</a>
 								<a href="./../index.html" class="notes__hide">Hide</a>
-                <button class="notes__add" type="button"> Add Note</button>
+                <button class="notes__add" type="button"> Add </button>
+ <button class="notes__export" type="button" onclick="exportF()"> Export</button>
                 <div class="notes__list"></div>
             </div>
 						<div id="main">

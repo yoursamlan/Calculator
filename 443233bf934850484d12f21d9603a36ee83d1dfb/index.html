@@ -22,6 +22,21 @@
 			document.getElementById("ob").style.display = "";
 			document.getElementById("main").style.width = "100%";
 		}
+
+		function exportF() {
+			function exportToJsonFile() {
+				let dataStr = JSON.stringify(localStorage);
+				let dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
+				let exportFileDefaultName = 'Journal - ' + new Date().toLocaleString() + '.json';
+
+				let linkElement = document.createElement('a');
+				linkElement.setAttribute('href', dataUri);
+				linkElement.setAttribute('download', exportFileDefaultName);
+				linkElement.click();
+			}
+			exportToJsonFile();
+		}
+
 	</script>
 </head>
 
@@ -29,4 +44,6 @@
 	<div class="notes" id="app">
 	</div>
 	<script src="./js/main.js" type="module"></script>
-</body></html>
+</body>
+
+</html>

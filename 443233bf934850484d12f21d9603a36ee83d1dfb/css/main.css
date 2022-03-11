@@ -34,6 +34,7 @@ body {
 }
 */
 .notes__add,
+.notes__export,
 .notes__hide {
 	background: #4d90fe;
 	border: none;
@@ -45,7 +46,7 @@ body {
 	margin: 10px 0 0px 12px;
 	margin-bottom: 1em;
 	padding: 0.5em 0;
-	width: 44%;
+	width: 28%;
 	display: inline-grid;
 	text-align: center;
 	text-decoration: none;
@@ -53,6 +54,10 @@ body {
 
 .notes__hide {
 	background-color: indianred;
+}
+
+.notes__export {
+	background-color: #87a385;
 }
 
 .notes__add:hover {
