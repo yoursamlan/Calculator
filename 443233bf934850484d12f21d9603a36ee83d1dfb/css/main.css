@@ -36,7 +36,8 @@ body {
 	/*font-weight: bold;*/
 	margin-bottom: 1em;
 	padding: 0.75em 0;
-	width: 100%;
+	width: 49%;
+	display: inline-grid;
 	text-align: center;
 	text-decoration: none;
 }
