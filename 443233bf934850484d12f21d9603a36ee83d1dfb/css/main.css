@@ -56,7 +56,7 @@ body {
 .notes__list-item--selected {
 	background: #eeeeee;
 	border-radius: 7px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .notes__small-title,
