@@ -5,9 +5,9 @@ body {
 	overflow: hidden;
 }
 
-/*{
-	border: 1px solid red;
-}*/
+* {
+	text-align: justify;
+}
 
 ::-webkit-scrollbar {
 	width: 5px;
@@ -16,6 +16,8 @@ body {
 .notes {
 	display: flex;
 	height: 100%;
+	width: 90%;
+	margin: auto;
 }
 
 .notes * {
@@ -92,12 +94,11 @@ body {
 .notes__preview {
 	display: flex;
 	flex-direction: column;
-	padding: 2em 5em 2em 3em;
+	padding: 2em 1em 2em 3em;
 	flex-grow: 1;
 	height: 90vh;
-	width: 80%;
+	width: 90%;
 	margin: auto;
-	text-align: justify;
 }
 
 .notes__title,
@@ -185,7 +186,7 @@ a.notes__hide {
 	transition: margin-left .5s;
 	padding: 16px;
 	height: 100%;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	overflow-x: hidden;
 	overflow-y: hidden;
