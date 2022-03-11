@@ -1,5 +1,6 @@
 body {
-	width: 500px;
+	width: 400px;
+	/*500px*/
 	margin: 4em auto;
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 5px;
@@ -44,7 +45,8 @@ body {
 	display: inline-block;
 	border: 1px solid #bbb;
 	border-radius: 10px;
-	width: 80px;
+	width: 55px;
+	/*80px*/
 	text-align: center;
 	padding: 10px;
 	margin: 20px 4px 10px 0;
@@ -72,7 +74,8 @@ body {
 	display: inline-block;
 	border: 1px solid #ddd;
 	border-radius: 10px;
-	width: 80px;
+	width: 55px;
+	/*80px*/
 	text-align: center;
 	padding: 10px;
 	margin: 10px 4px 10px 0;
@@ -96,7 +99,8 @@ div.equal {
 	display: inline-block;
 	border: 1px solid #3079ED;
 	border-radius: 10px;
-	width: 17%;
+	width: 15%;
+	/*17%*/
 	text-align: center;
 	padding: 127px 10px;
 	margin: 10px 6px 10px 0;
@@ -124,7 +128,7 @@ div.equal:active {
 	text-transform: uppercase;
 	font-family: "Montserrat Light", "Montserrat", sans-serif;
 	font-weight: 100;
-	font-size: 15px;
+	font-size: 14px;
 	padding: 20px;
 	letter-spacing: 7px;
 }
