@@ -2,13 +2,14 @@ html,
 body {
 	height: 100%;
 	margin: 0;
+	overflow: hidden;
 }
 
-*/ {
+/*{
 	border: 1px solid red;
-}
+}*/
 
-*/::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 5px;
 }
 
@@ -91,15 +92,18 @@ body {
 .notes__preview {
 	display: flex;
 	flex-direction: column;
-	padding: 2em 3em;
+	padding: 2em 5em 2em 3em;
 	flex-grow: 1;
+	height: 90vh;
+	width: 80%;
+	margin: auto;
+	text-align: justify;
 }
 
 .notes__title,
 .notes__body {
 	border: none;
 	outline: none;
-	width: 100%;
 }
 
 .notes__title {
@@ -180,9 +184,15 @@ a.notes__hide {
 #main {
 	transition: margin-left .5s;
 	padding: 16px;
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*
 @media screen and (max-height: 450px) {
 	.sidebar {
 		padding-top: 15px;
@@ -192,3 +202,4 @@ a.notes__hide {
 		font-size: 18px;
 	}
 }
+*/
