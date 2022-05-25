@@ -1,0 +1,225 @@
+/********************************
+    Google Fonts
+********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,700');
+
+/********************************
+    General
+********************************/
+html {
+    /*background-image: url('https://s-media-cache-ak0.pinimg.com/564x/15/f3/ff/15f3ffa56618935d5ca536a119ff40a6.jpg');*/
+  background: #333;
+}
+
+body, div {
+        margin: 0;
+        padding: 0; 
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+}
+
+.calculator {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #383838;
+    overflow: hidden;
+    box-shadow: 0px 0px  60px 15px #333;
+}
+
+.screen {
+    position: relative;
+    height: 40%;
+}
+
+.controls {
+    position: relative;
+    height: 60%;
+    background-color: #353535;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.footer {
+    display: none;
+}
+
+/********************************
+    Screen
+********************************/
+
+#currentSum {
+    position: absolute;
+    top: 25%;
+    right: 6%;
+    font-size: 3rem;
+}
+
+#total {
+    position: absolute;
+    top: 66%;
+    right: 7%;
+    color: #999;
+    font-size: 2rem;
+}
+
+#historyBtn {
+    position: relative;
+    top: 85%;
+    left: 7.5%;
+}
+
+#historyPanel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 75%;
+    z-index: 2;
+    left: -75%;
+    background-color: #333;
+    transition: 0.35s;
+    transition-timing-function: cubic-bezier(.78,.6);
+    overflow-x: hidden;
+}
+
+.scrollable {
+    overflow-y: scroll;
+}
+
+#backArrow {
+    position: absolute;
+    top: 85%;
+    right: 6%;
+    font-size: 1rem;
+    color: #444;
+    transition: 0.4s;
+}
+
+/********************************
+    Controls
+********************************/
+
+ .el, .equals, .clear {
+    display: inline-block;
+    height: 20%;
+    width: 25%;
+    font-size: 2rem; 
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin-right: -5px;
+}
+
+.el span, .equals span, .clear span {
+    position: relative;
+    top: 25%;
+    left: 2%;
+}
+
+.clear {
+    color: #C54B4B;
+    font-weight: 700;
+}
+
+.special {
+    color: #4B7CC5;
+    font-weight: 700;
+}
+
+.basics {
+    background-color: #373737;
+}
+
+.equals {
+    background: #4B7CC5;
+    font-weight: 700;
+    color: #fff;
+}
+
+.highlight {
+    background: #414141;
+    opacity: 0.4;
+}
+
+/********************************
+    History Panel
+********************************/
+
+.history-item {
+    text-align: right;
+    margin: 15px 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.history-item span {
+    padding-right: 10px;
+}
+
+hr {
+    color: #4B7CC5;
+    background: #4B7CC5;
+    border-color: #4B7CC5;
+}
+
+#clear-history {
+    margin-left: 10%;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    margin-bottom: -1px;
+}
+
+#clear-history:hover {
+    color: #C54B4B;
+}
+
+/********************************
+    Media Queries
+********************************/   
+
+@media screen and (min-width: 768px) {
+
+.calculator {
+    width: 375px;
+    height: 666px;
+    margin: auto;
+    margin-top: 7.5%;
+}
+
+#backArrow {
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    font-size: 1rem;
+    color: #555;
+}
+
+.footer  {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+a, a:visited, a:active, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #4B7CC5;
+}
+
+}    
+
+
